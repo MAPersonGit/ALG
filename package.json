@@ -16,6 +16,9 @@
   "bin": {
     "my-cli-tool": "./dist/esbuild/cli.js"
   },
+  "typescript": {
+    "definition": "./src/Alpaca.d.ts"
+  },
   "scripts": {
     "cli": "ts-node src/cli.ts",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
@@ -33,10 +36,12 @@
     "esbuild-node:watch": "esbuild src/cli.ts --bundle --watch --sourcemap=external --outfile=dist/esbuild/cli.js"
   },
   "devDependencies": {
+    "@alpacahq/alpaca-trade-api": "^2.1.0",
     "@types/jest": "^26.0.21",
     "@types/node": "^15.0.1",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
+    "algotrader": "^2.5.4",
     "esbuild": "^0.11.11",
     "eslint": "^7.22.0",
     "jest": "^26.6.3",
