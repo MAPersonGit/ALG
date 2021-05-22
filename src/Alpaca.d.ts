@@ -1,7 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-
-// export as namespace "Alpaca";
-
 interface IClockTimeStamp {
   "timestamp": string;
   "is_open": boolean;
@@ -92,11 +88,6 @@ interface IOrdersQueryParams {
 interface Constructable<T> {
   new(...args:any): T;
 }
-
-// declare module "Alpaca" {
-//   function Alpaca():Constructable<AlpacaSettings>
-//   export = Alpaca;
-// }
 
 // To handle both importing via UMD and modules:
 
